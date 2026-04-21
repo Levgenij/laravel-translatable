@@ -79,14 +79,14 @@ Multiple [helpers](#crud-operations) are available for all basic CRUD operations
 | :--- | :--- | :--- |
 | **v1.0.0 - v1.0.22** | `5.2.* - 5.8.*` | `5.6.* / 7.0.* - 7.2.*` |
 | **v2.0.0 - v2.0.5** (original) | `>=6.0` | `>=7.3.*` |
-| **v2.1.0+** (this fork) | `11.* / 12.*` | `>=8.2` |
+| **v2.1.0+** (this fork) | `11+` (11, 12, 13, …) | `>=8.2` (Laravel 13+ needs PHP `>=8.3`) |
 
 ## What's new in this fork
 
 This fork continues development with the following improvements:
 
 - **Modern PHP support**: PHP 8.2+ with strict types and modern syntax
-- **Latest Laravel support**: Laravel 11 and Laravel 12 compatibility
+- **Latest Laravel support**: Laravel 11+ (including 12, 13, and newer)
 - **New namespace**: Changed from `Laraplus\Data` to `Levgenij\LaravelTranslatable`
 - **Bug fixes**: Fixed `withCount()` compatibility - now correctly adds translations when columns are already set
 - **Code quality**: Added `declare(strict_types=1)`, strict parameter and return type declarations
@@ -487,7 +487,7 @@ There are other popular packages for making Eloquent models translatable:
 | **Single query for translations** | ✅ JOIN | ✅ Same row | ❌ Eager loading |
 | **Works with aggregations** | ⚠️ Use `withoutTranslations()` | ✅ Yes | ✅ Yes |
 | **Schema changes for new locales** | ❌ Not required | ❌ Not required | ❌ Not required |
-| **Laravel 11/12 support** | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Laravel 11+ support** | ✅ Yes | ✅ Yes | ✅ Yes |
 
 ### Advantages of this package
 

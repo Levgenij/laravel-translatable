@@ -207,7 +207,7 @@ trait Translatable
      */
     public function translate(string $locale): TranslationModel|static|null
     {
-        if (app()->getLocale() === $locale) {
+        if (TranslatableConfig::currentLocale() === $locale) {
             $found = $this;
         } else {
             $found = $this->translations->where($this->getLocaleKey(), $locale)->first();
